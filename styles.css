@@ -1,0 +1,79 @@
+:root{
+    --bg-color-body: rgb(31, 29, 29);
+    --bg-color-main: rgb(49, 46, 46);
+    --font-color: rgb(255, 255, 255);
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body, html{
+    width: 100vw;
+    height: 100vh;
+    font-size: 16px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: var(--font-color);
+    background: var(--bg-color-body);
+}
+
+main{
+    background: var(--bg-color-main);
+    border-radius: 10px;
+    width: 350px;
+    gap: 1em;
+    box-shadow: 1px 1px 5px var(--bg-color-body);
+}
+
+.flex-center{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-space-between{
+    display:flex;
+    justify-content: space-between;
+}
+
+.flex-row{
+    flex-direction: row;
+}
+
+.flex-column{
+    flex-direction: column;
+}
+
+.m-20{
+    margin: 20px;
+}
+
+.mt-1rem{
+    margin-top: 1rem;
+}
+
+.mx-20{
+    margin: 0 20px;
+}
+
+.p-10{
+    padding: 10px;
+}
+
+.p-20{
+    padding: 20px;
+}
+
+.fw-800{
+    font-weight: 800;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.width-max{
+    width: 100%;
+}

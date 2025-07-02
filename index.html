@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A web app for calculating how much to tip for any occasion, wether it may be at a restaurant or for a service.">
+    <meta name="keywords" content="HTML, CSS, JS, JavaScript, Tip, Calculator, Project, Easy">
+    <link rel="stylesheet" href="styles.css">
+    
+    <title>Tip Calculator</title>
+</head>
+<body class="flex-center">
+    
+    <!-- Container -->
+    <main class="TipCalcCont m-20 p-20 flex-space-between flex-column">
+
+        <header class="text-center m-20"><h1>Tip Calculator</h1></header>
+
+        <!-- Input Bill Amount -->
+        <div class="BillAmount">
+            <label for="BillInput">Bill:</label>
+        </div>
+
+        <input type="number" id="BillInput" class="width-max p-10" min="0" value="0">
+
+        <!-- Tip Calculation -->
+        <div class="TipCalculation">
+
+            <!-- Tip Percentage -->
+            <div class="TipLabel flex-space-between">
+                <label>Tip:</label>
+                <span id="TipPercentage"></span>
+            </div>
+
+            <!-- Tip Slider -->
+            <input type="range" id="TipSlider" min="0" max="100" step="5" value="0" class="width-max mt-1rem">
+
+        </div>
+
+        <!-- Amount of Tip -->
+        <div class="TipTotal fw-800 flex-space-between">
+            <span>Tip Amount:</span>
+            <span id="TipTotal"></span>
+        </div>
+
+        <!-- Amount of Bill -->
+        <div class="BillTotal fw-800 flex-space-between">
+            <span>Bill Total:</span>
+            <span id="BillTotal"></span>
+        </div>
+
+    </main>
+
+    <script defer src="script.js"></script>
+</body>
+</html>
